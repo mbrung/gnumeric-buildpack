@@ -13,4 +13,4 @@ ENV_DIR=$3
 
 echo "-----> Installing gnumeric and its dependencies"
 
-apt-get install -y gnumeric
+apt-get install --yes --no-install-recommends gnumeric
