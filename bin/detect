@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "gnumeric-buildpack"
+exit 0
