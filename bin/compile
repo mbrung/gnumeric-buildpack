@@ -14,6 +14,9 @@ ENV_DIR=$3
 APT_CACHE_DIR="$CACHE_DIR/apt/cache"
 APT_STATE_DIR="$CACHE_DIR/apt/state"
 
+mkdir -p "$APT_CACHE_DIR/archives/partial"
+mkdir -p "$APT_STATE_DIR/lists/partial"
+
 echo "-----> Installing gnumeric and its dependencies"
 
 apt-get install --yes --no-install-recommends gnumeric
